@@ -25,6 +25,16 @@ class Latihan3{
 		
 		System.out.print(pp3);
 							
+		/* pakai array dan for loop
+		PapanTulis pp[] = new PapanTulis[3];
+		pp[0] = new PapanTulis(16, 8, "putih");
+		pp[1] = new PapanTulis(9, 7, "biru");
+		pp[2] = new PapanTulis(6, 2);
+	
+		for(int i=0;i<3;i++){
+			System.out.println(pp[i]);
+		}
+		*/	
 		
 		
 	}
