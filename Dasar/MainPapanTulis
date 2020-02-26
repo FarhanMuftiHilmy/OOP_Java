@@ -1,4 +1,4 @@
-class Latihan3{	
+class MainPapanTulis{	
 	public static void main(String [] args){
 		/*
 		int panjang = 16;
