@@ -1,6 +1,6 @@
 # OOP_Java
 
-The elemntary knowledge of object oriented programming using java
+Collection of study materials regarding "Object Oriented Programming using Java" from Software Engineering Technology Study Programme
 
 ## Contributing
 
