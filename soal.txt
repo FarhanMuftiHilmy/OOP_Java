@@ -1,0 +1,28 @@
+buat class MobilBiasa dan MobilMatic.
+	dengan attribut:
+		noPlat(wajib ada), 
+		kecepatan (default 0), 
+		perseneleng (default N)
+		
+	buat setter, getter dan toString nya
+	buat method tambahan : 	- gas()	kecepatan naik per 5 	
+							- rem()	kecepatan turun per 5
+							- oper(__) //untuk pindah perseneleng
+								oper("N")
+
+Class MobilBiasa :
+	nb: perseneleng MobilBiasa antara 1, 2, 3, 4, 5, 'R' dan 'N'
+		bisa diubah ke Perseneleng 1-5 dan N saat kecepatan sama dengan 0 atau lebih
+		bisa diubah ke Perseneleng R saat kecepatan sama dengan 0 atau sedang mundur
+		gas() akan menambah kecepatan maju jika perseneleng = 1-5, v++
+		gas() akan menambah kecepatan mundur jika perseneleng ='R',v--
+			(kecepatan negatif berarti mundur) 
+		rem() akan mengurangi kecepatan (v--) jika maju atau v++ jika sedang mundur tetapi tidak dapat menjadikan menambah kecepatan maju/mundur.
+class MobilMatic :		
+	nb: perseneleng MobilMatic antara 'R','N' atau 'D'
+		bisa diubah ke Perseneleng D saat kecepatan sama dengan 0 atau lebih
+		bisa diubah ke Perseneleng R saat kecepatan sama dengan 0 atau sedang mundur
+		gas() akan menambah kecepatan maju jika perseneleng = 'D', v++
+		gas() akan menambah kecepatan mundur jika perseneleng ='R',v--
+			(kecepatan negatif berarti mundur) 
+		rem() akan mengurangi kecepatan (v--) jika maju atau v++ jika sedang mundur tetapi tidak dapat menjadikan menambah kecepatan maju/mundur.
