@@ -1,0 +1,92 @@
+Buatlah 3 kelas berikut:
+	1. Kelas Titik 
+		attribut koordX dan koordY
+		method
+			2 buah konstruktor : 
+				1. ketika membuat objek Titik baru,sekaligus memasukkan koordX dan koordY
+				2. ketika membuat objek Titik baru tidak perlu memasukkan koordX dan koordY, defaultnya (0,0)
+			setter dan getter
+			naik()	//isinya : koordY++		kanan()	//isinya : koordX++
+			turun()	//isinya : 	koordY--	kiri()	//isinya : koordX--
+			toString() //isinya : "( "+koordX+" , "+koordY+" )"
+			
+	2. Kelas Garis
+		attribut titikAwal dan titikAkhir
+		method
+			1 buah konstruktor, yaitu ketika membuat objek Garis baru, sekaligus memasukkan titikAwal dan titikAkhir
+			setter dan getter
+			getPanjang() //isinya :
+	jarakX = Math.pow((titikAkhir.getKoordX()-titikAwal.getKoordX()),2);
+	jarakY = Math.pow((titikAkhir.getKoordY()-titikAwal.getKoordY()),2);
+	jarak = Math.pow((jarakX+jarakY),0.5);
+	return jarak;			
+			
+		toString() //isinya : "Garis dari "+titikAwal+" sampai "+titikAkhir
+		
+	3. Main class	
+		buat titik t1(5,8) dan t2(2,4)
+		buat garis g1 (t1, t2)
+		System.out.println(g1);
+			"garis dari (5,8) sampai (2,4)"
+		System.out.println(g1.getPanjang());
+		t1.naik();
+		System.out.println(g1);
+			"garis dari (5,9) sampai (2,4)"
+		System.out.println(g1.getPanjang());
+
+
+--------------------------------------------------------------------------------------------------------------------------
+Buatlah project LatihanBuku di Netbeans.
+Method Main :
+	public static void main(String[] args) {
+        BukuNovel novel = new BukuNovel("Aku", 124, "Dian", "Komsi");
+        BukuTulis tulis = new BukuTulis(40, "Sinar Harapan");
+        novel.setNamaPemilik("saya");
+        tulis.setNamaPemilik("bukan saya");
+        System.out.println(novel.getJudul());
+        System.out.println(novel.getJumlahHalaman());
+        System.out.println(novel.getNamaPemilik());
+        System.out.println(novel.getNamaPenerbit());
+        System.out.println(novel.getNamaPenulis());
+        System.out.println(novel);
+        System.out.println(tulis.getJumlahHalaman());
+        System.out.println(tulis.getMerk());
+        System.out.println(tulis.getNamaPemilik());
+        System.out.println(tulis);
+    }
+	
+Setelah selesai, perhatikan kedua class tersebut, apakah banyak yang sama?
+Jika ditambahkan class BukuIlmiah dengan attribut judul, namaPenulis, jumlahHalaman, namaPemilik serta namaInstansi, Apakah perlu menuliskan attribut dan method sebanyak itu?
+
+Coba tambahkan:
+1. BukuLaporanTA(judul, namaPenulis, jumlahHalaman, namaPemilik, namaInstansi dan namaPembimbing)
+2. BukuHalus(jumlahHalaman, namaPemilik, merk dan harga)
+---------------------------------------------------------------------------------------------------------------------------
+Buat class-class berikut sehingga penulisan programmnya menjadi minimum
+
+Segi3Siku			Segi3SamaKaki
+	a,t             	a,t
+	getA, setA      	getA, setA
+	getT, setT      	getT, setT
+	getLuas()       	getLuas()
+	getKeliling()   	getKeliling()
+	toString()			toString()
+	
+public static void main(){
+	Segi3Siku siku1 = new Segi3Siku();
+	Segi3Siku siku2 = new Segi3Siku(6,8);
+	Segi3SamaKaki smk1 = new Segi3SamaKaki();
+	Segi3SamaKaki smk2 = new Segi3SamaKaki(3,8);
+	System.out.println(siku1);//a=4, t=3
+	System.out.println(siku2);//a=6, t=8
+	System.out.println(smk1);//a=6, t=4
+	System.out.println(smk2);//a=3, t=8
+	System.out.println(siku1.getLuas());//6
+	System.out.println(siku2.getLuas());//24
+    System.out.println(smk1.getLuas());//12
+    System.out.println(smk2.getLuas());//12
+	System.out.println(siku1.getKeliling());//12
+	System.out.println(siku2.getKeliling());//24
+    System.out.println(smk1.getKeliling());//16
+    System.out.println(smk2.getKeliling());//13
+}
